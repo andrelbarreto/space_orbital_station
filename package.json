@@ -1,7 +1,8 @@
 {
   "name": "space_orbital_station",
   "version": "0.0.1",
-  "author": "Team Matrix",
+  "author": " Andre Barreto  & Team Matrix : Nathan, Shannon, Jacob",
+  "homepage": "https://andrelbarreto.github.io/space_orbital_station",
   "private": true,
   "scripts": {
     "start": "node -e \"console.log('open browser at http://localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
