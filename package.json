@@ -1,10 +1,12 @@
 {
   "name": "space_orbital_station",
   "version": "0.0.1",
-  "author": " Andre Barreto  & Team Matrix : Nathan, Shannon, Jacob",
-  "homepage": "https://andrelbarreto.github.io/space_orbital_station",
+  "author": "Team Matrix",
   "private": true,
+  "homepage": "https://andrelbarreto.github.io/space_orbital_station",
   "scripts": {
+    "predeploy": "npm run bundle",
+    "deploy": "gh-pages -d build",
     "start": "node -e \"console.log('open browser at http://localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
     "bundle": "node node_modules/react-vr/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
@@ -12,12 +14,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "ovrui": "~2.0.0",
     "react": "16.0.0",
     "react-native": "~0.48.0",
-    "three": "^0.87.0",
     "react-vr": "~2.0.0",
-    "react-vr-web": "~2.0.0"
+    "react-vr-web": "~2.0.0",
+    "three": "^0.87.0"
   },
   "devDependencies": {
     "babel-jest": "^19.0.0",
