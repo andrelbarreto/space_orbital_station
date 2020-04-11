@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  
+    <title>space_orbital_station</title>
+    <style>body { margin: 0; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+<!-- 
+  <div class="jumbotron col-4">
+    <h1 class="display-4">Welcome to Space Orbital Station!</h1>
+    <p class="lead"></p>
+    <hr class="my-4"> 
+  <div class="signIn container col-12">
+    <form class="form-signin">
+      <img id="patch" class="patch" src="./img/ISS_Insignia.png" alt="" width=30% >
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+          <p class="create">Don't have a sign in? Create one BELOW  <a href="./SignUp.html" class="link">Here</a></p> -->
+        <!-- </label>
+      </div>
+      <button class="btn btn-lg btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">Copyright &copy; 2020 Team Matrix. All Rights Reserved. </p>
+    </form> 
+
+<div></div> --> 
+    
+    <!-- When you're ready to deploy your app, update this line to point to your compiled client.bundle.js -->
+    <script src="./client.bundle?platform=vr"></script>
+    <script>
+      // Initialize the React VR application
+      ReactVR.init(
+        // When you're ready to deploy your app, update this line to point to
+        // your compiled index.bundle.js
+        '../index.vr.bundle?platform=vr&dev=true',
+        // Attach it to the body tag
+        document.body   //.children(1)
+      );
+    </script>
+  </body>
+</html>
+
